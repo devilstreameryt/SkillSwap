@@ -85,7 +85,7 @@ Entity-Relationship Diagram (ERD) showing main tables and relations:
 - **Messages** – messages exchanged in chats
 - **Notifications** – alerts for requests and updates
 
-<img width="1044" height="1477" alt="Database ERD" src="https://github.com/user-attachments/assets/bb3bdd86-e9a5-47e5-91d3-ab1ca977c802" />
+<img width="200" height="200" alt="Database ERD" src="https://github.com/user-attachments/assets/bb3bdd86-e9a5-47e5-91d3-ab1ca977c802" />
 
 
 ---
@@ -94,13 +94,13 @@ Entity-Relationship Diagram (ERD) showing main tables and relations:
 
 Initial frontend design sketches (Home, Sign In, Sign Up, Dashboard, Profile, Send Requests, View Requests, Notifications, Chat, Messages):
 
-<img width="1500" height="1090" alt="Home, SignUp, SignIn, Dashboard" src="https://github.com/user-attachments/assets/384ed19a-b88e-4226-8e88-cdbaefe79078" />
+<img width="200" height="200" alt="Home, SignUp, SignIn, Dashboard" src="https://github.com/user-attachments/assets/384ed19a-b88e-4226-8e88-cdbaefe79078" />
 
-<img width="940" height="1309" alt="Profile" src="https://github.com/user-attachments/assets/1d8f9031-94d6-4ca4-9187-b78db8ae7186" />
+<img width="200" height="200" alt="Profile" src="https://github.com/user-attachments/assets/1d8f9031-94d6-4ca4-9187-b78db8ae7186" />
 
-<img width="1597" height="1115" alt="requests and notifications" src="https://github.com/user-attachments/assets/caff2f60-33a6-4d35-924c-5dd80789ed7b" />
+<img width="200" height="200" alt="requests and notifications" src="https://github.com/user-attachments/assets/caff2f60-33a6-4d35-924c-5dd80789ed7b" />
 
-<img width="1546" height="1100" alt="Chats and messages" src="https://github.com/user-attachments/assets/c2c0f712-6a4c-44b0-803f-25f5b1478764" />
+<img width="200" height="200" alt="Chats and messages" src="https://github.com/user-attachments/assets/c2c0f712-6a4c-44b0-803f-25f5b1478764" />
 
 
 
