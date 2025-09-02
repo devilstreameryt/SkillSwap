@@ -1,22 +1,36 @@
-# 🔄 Spring MVC CRUD - SkillSwap
+# 🔄 SkillSwap – Peer-to-Peer Skill Sharing Platform
 
-A full-stack Java web application for skill exchange and networking. Built using Spring MVC, Hibernate, JSP, and MySQL, this project demonstrates a complete CRUD (Create, Read, Update, Delete) system following the MVC architecture.
+SkillSwap is a web-based application designed to connect users who want to **share or learn skills** from each other. Users can create profiles, list the skills they offer and want, send requests to exchange skills, and communicate via built-in chat.
 
 ---
 
 ## 🚀 Features
 
-* 🔍 View all users and their skills
-* ➕ Add new skills (offered/wanted)
-* ✏️ Edit user profile and skills
-* ❌ Delete users
-* 🔔 Send and respond to skill swap requests
-* 💬 Chat with other users after request acceptance
-* 🧩 MySQL + Hibernate integration
-* 🖥️ JSP views using JSTL and Spring Form tags
-* 🎨 Styled with Bootstrap 4
-* ⚙️ XML-based Spring configuration
-* 🔁 Transactional session management with Hibernate
+1. **User Registration & Login**
+
+   * Users create an account with basic information.
+   * Login is authenticated by email and password.
+
+2. **Profile & Skills**
+
+   * Users can manage their profile, including first/last name, bio, location, and photo.
+   * Users can add skills they **offer** and skills they **want** to learn.
+
+3. **Sending Requests**
+
+   * Users browse others with desired skills.
+   * Send skill exchange requests.
+   * Notifications alert users of incoming requests.
+
+4. **Request Response**
+
+   * Receivers can accept or reject requests.
+   * Upon acceptance, a chat is automatically created.
+
+5. **Chat & Messaging**
+
+   * Users can chat with connected peers.
+   * Messages are timestamped and stored in the database.
 
 ---
 
@@ -24,9 +38,10 @@ A full-stack Java web application for skill exchange and networking. Built using
 
 | Layer           | Technology                  |
 | --------------- | --------------------------- |
-| Backend         | Java, Spring MVC, Hibernate |
-| Frontend        | JSP, JSTL, Bootstrap 4      |
-| Database        | MySQL                       |
+| Backend         | Java, Spring MVC, Spring Transaction Management, Hibernate/JPA |
+| Frontend        | JSP, HTML, CSS, Bootstrap      |
+| Database        | MySQL   |
+| File Handling   | Multipart file uploads for profile photos  |
 | ORM             | Hibernate                   |
 | Build Tool      | Maven                       |
 | Connection Pool | c3p0                        |
@@ -39,19 +54,19 @@ A full-stack Java web application for skill exchange and networking. Built using
 ```
 src/
 └── com.skillswap
-    ├── controller         # UserController, ChatController
-    ├── dao                # UserDAO, SkillDAO, RequestDAO, MessageDAO, NotificationDAO
-    ├── model              # User.java, Skill.java, Request.java, Chat.java, Message.java, Notifications.java
+    ├── controller         # UserController, handles HTTP requests
+    ├── dao                # UserDAO, SkillDAO, RequestDAO, MessageDAO, NotificationDAO interfaces and implementations
+    ├── model              # User, Skill, SkillsOffered, SkillsWanted, UserDetails, Request, Chat, Message, Notifications
     ├── service            # UserService, SkillService, RequestService, ChatService, MessageService, NotificationService
-
+                            
 WebContent/
 ├── WEB-INF/
 │   ├── lib/               # External JARs
-│   ├── view/              # JSP pages (profile.jsp, dashboard.jsp, chats.jsp)
+│   ├── view/              # JSP pages (home, signIn, singUp, dashboard, profile, sendRequests, viewRequests, notifications, chats, messages)
 │   ├── spring-container.xml
 │   └── web.xml
 ├── resources/
-│   └── css/style.css
+│   └── images/Screenshot_1.png
 ```
 
 ---
@@ -91,4 +106,5 @@ This project is open-source and free to use under the MIT License.
 
 ## 🏷️ GitHub Topics
 
-`Java` `Spring MVC` `Hibernate` `JSP` `MySQL` `MVC` `Web-Application` `Full-Stack` `Bootstrap` `JSTL` `CRUD` `c3p0` `XML` `Apache Tomcat` `SkillSwap` `Chat` `Notifications`
+`Java` `Spring MVC` `Hibernate` `JSP` `MySQL` `MVC` `Web-Application` `Full-Stack` `Bootstrap` `JSTL` `CRUD` `c3p0` `XML` `Apache Tomcat` `SkillSwap` `Chat` `Notifications` `Maven` `Peer-to-Peer` `SkillSharing`
+
