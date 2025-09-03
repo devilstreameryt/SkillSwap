@@ -108,7 +108,9 @@ Initial frontend design sketches (Home, Sign In, Sign Up, Dashboard, Profile, Se
 
 ## ▶️ Demo Video
 
-🎥 [Watch the Project Demo](https://github.com/abanoubwagim/SkillSwap/assets/demo.mp4) 
+🎥 https://github.com/user-attachments/assets/319fc508-3006-4f87-8fdf-24650b3d48ce
+
+
 
 ---
 
