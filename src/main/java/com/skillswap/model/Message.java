@@ -25,11 +25,11 @@ public class Message {
 	private Chat chat;
 	
 	@ManyToOne
-	@JoinColumn(name = "sender_id", referencedColumnName = "id")
+	@JoinColumn(name = "sender_id", referencedColumnName = "id", nullable = true)
 	private User sender;
 	
 	@ManyToOne
-	@JoinColumn(name = "receiver_id", referencedColumnName = "id")
+	@JoinColumn(name = "receiver_id", referencedColumnName = "id", nullable = true)
 	private User receiver;
 	
 	@Column(name = "message_text", length = 1000)

@@ -59,7 +59,9 @@ public class UserDAOImpl implements UserDAO{
 	public void removeUserById(int id) {
 		Session session = sessionFactory.getCurrentSession();
 		User user = session.get(User.class, id);
-		session.delete(user);
+		if(user != null) {
+			session.delete(user);
+		}
 		
 	}
 

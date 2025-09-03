@@ -52,6 +52,10 @@ public class User {
 	private List<SkillsOffered> skillsOffereds = new ArrayList<>();
 	
 	
+	@OneToMany(mappedBy = "userSender", cascade = CascadeType.ALL, orphanRemoval = true)
+	private List<Chat> chatsAsSender = new ArrayList<>();
+
+	
 	@OneToMany(mappedBy = "userReceiver", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Chat> chatsAsReceiver = new ArrayList<>();
 
@@ -260,6 +264,16 @@ public class User {
 
 	public void setReceivedRequests(List<Request> receivedRequests) {
 		this.receivedRequests = receivedRequests;
+	}
+
+
+	public List<Chat> getChatsAsSender() {
+		return chatsAsSender;
+	}
+
+
+	public void setChatsAsSender(List<Chat> chatsAsSender) {
+		this.chatsAsSender = chatsAsSender;
 	}
 	
 	

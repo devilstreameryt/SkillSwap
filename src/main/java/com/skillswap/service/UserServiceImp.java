@@ -10,6 +10,10 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.skillswap.dao.UserDAO;
+import com.skillswap.model.Chat;
+import com.skillswap.model.Message;
+import com.skillswap.model.Notifications;
+import com.skillswap.model.Request;
 import com.skillswap.model.Skill;
 import com.skillswap.model.SkillsOffered;
 import com.skillswap.model.SkillsWanted;
@@ -25,6 +29,7 @@ public class UserServiceImp implements UserService {
 	
 	@Autowired
 	private SkillService skillService;
+	
 	
 	
 	
@@ -54,7 +59,35 @@ public class UserServiceImp implements UserService {
 	@Override
 	@Transactional
 	public void removeUserById(int id) {
-		userDao.removeUserById(id);
+		
+		User user = userDao.getUserById(id);
+		
+			if(user == null){
+				throw new RuntimeException("User not found");
+			}
+			
+		    for (Message msg : new ArrayList<>(user.getSentMessages())) {
+		        msg.setSender(null);
+		    }
+		    user.getSentMessages().clear();
+
+		    for (Message msg : new ArrayList<>(user.getReceivedMessages())) {
+		        msg.setReceiver(null);
+		    }
+		    user.getReceivedMessages().clear();
+
+		    
+		    for (Chat chat : new ArrayList<>(user.getChatsAsReceiver())) {
+		        chat.setUserReceiver(null);
+		    }
+		    user.getChatsAsReceiver().clear();
+
+		    for (Chat chat : new ArrayList<>(user.getChatsAsSender())) {
+		        chat.setUserSender(null);
+		    }
+		    user.getChatsAsSender().clear();
+			
+	    userDao.removeUserById(user.getId());
 		
 	}
 
