@@ -129,14 +129,14 @@ cd SkillSwap
 
 * Create a schema named `skillswap`
 * Tables will be created automatically by Hibernate
-* Update `spring-container.xml` with your DB username/password if needed
+* Update `spring-container.xml` with your DB username/password 
 
 4. Deploy the project to Apache Tomcat server.
 
 5. Open your browser:
 
 ```
-http://localhost:8081/SkillSwap/
+http://localhost:8080/SkillSwap/
 ```
 
 ---
